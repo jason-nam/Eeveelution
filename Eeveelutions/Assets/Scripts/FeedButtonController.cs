@@ -14,7 +14,7 @@ public class FeedButtonController : MonoBehaviour
 
     public void FeedEevee ()
     {
-        healthSO.Value += 1;
+        if (healthSO.Value < 10) healthSO.Value += 1;
         healthText.text = healthSO.Value.ToString();
         timer = 0;
     }
