@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PriceSO : MonoBehaviour
+[CreateAssetMenu]
+
+public class PriceSO : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private int _price;
+
+    public int Value
     {
-        
+        get { return _price; }
+        set { _price = value; }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
