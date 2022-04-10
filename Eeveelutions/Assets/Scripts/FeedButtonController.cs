@@ -3,14 +3,19 @@ using UnityEngine.UI;
 
 public class FeedButtonController : MonoBehaviour
 {
-    int health = 10;
-    public Text textField;
+    public Text healthText;
+    [SerializeField] private DataSO healthSO;
     private float timer = 0.0f;
+
+    public void Start ()
+    {
+        healthText.text = healthSO.Value.ToString();
+    }
 
     public void FeedEevee ()
     {
-        health = health + 1;
-        textField.text = health.ToString();
+        healthSO.Value += 1;
+        healthText.text = healthSO.Value.ToString();
         timer = 0;
     }
 
@@ -18,10 +23,10 @@ public class FeedButtonController : MonoBehaviour
     {
         timer += Time.deltaTime;
         if (timer > 3)
-            if (health > 0)
+            if (healthSO.Value > 0)
             {
-                health = health - 1;
-                textField.text = health.ToString();
+                healthSO.Value -= 1;
+                healthText.text = healthSO.Value.ToString();
                 timer = 0;
             }
     }

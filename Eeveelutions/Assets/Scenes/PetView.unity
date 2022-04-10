@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 850712311}
   - component: {fileID: 850712310}
   m_Layer: 5
-  m_Name: Text
+  m_Name: HealthText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -540,12 +540,10 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '10
-
-'
+  m_Text: 
 --- !u!222 &850712311
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -700,7 +698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243d24537f97bcc40bb771c9d016cbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textField: {fileID: 850712310}
+  healthText: {fileID: 850712310}
+  healthSO: {fileID: 11400000, guid: 54daeabc88cb1704b96d152d9ac9750c, type: 2}
 --- !u!1 &1141651758
 GameObject:
   m_ObjectHideFlags: 0
