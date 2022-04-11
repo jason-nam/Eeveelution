@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class TransactionUI : MonoBehaviour
 {
     [SerializeField] private DataSO currencySO;
+    [SerializeField] private DataSO foodSO;
     [SerializeField] private PriceSO foodPriceSO;
     [SerializeField] private PriceSO waterStonePriceSO;
     [SerializeField] private PriceSO electricStonePriceSO;
@@ -11,8 +12,11 @@ public class TransactionUI : MonoBehaviour
 
     public void BuyFood ()
     {
-        if (currencySO.Value >= foodPriceSO.Value) currencySO.Value -= foodPriceSO.Value;
-        // Update inventory
+        if (currencySO.Value >= foodPriceSO.Value)
+        {
+            currencySO.Value -= foodPriceSO.Value;
+            foodSO.Value += 1;
+        }
     }
 
     public void BuyWaterStone ()

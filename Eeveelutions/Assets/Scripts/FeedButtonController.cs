@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class FeedButtonController : MonoBehaviour
 {
     public Text healthText;
+    [SerializeField] private DataSO foodSO;
     [SerializeField] private DataSO healthSO;
     private float timer = 0.0f;
 
@@ -14,7 +15,11 @@ public class FeedButtonController : MonoBehaviour
 
     public void FeedEevee ()
     {
-        if (healthSO.Value < 10) healthSO.Value += 1;
+        if (foodSO.Value > 0 && healthSO.Value < 10)
+        {
+            healthSO.Value += 1;
+            foodSO.Value -= 1;
+        }
         healthText.text = healthSO.Value.ToString();
         timer = 0;
     }
