@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15a9acdf7651dbc4386da854da110138, type: 3}
   m_Name: CurrencySO
   m_EditorClassIdentifier: 
-  _value: 45
+  _value: 10

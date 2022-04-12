@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01637aa583ed2a645bfd59d2cab63231, type: 3}
   m_Name: ElectricStonePriceSO
   m_EditorClassIdentifier: 
-  _price: 100
+  _price: 200

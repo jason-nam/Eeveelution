@@ -16,10 +16,10 @@ public class CurrencyUI : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > 5)
-            if (healthSO.Value > 5)
+        if (timer > 3)
+            if (healthSO.Value > 0)
             {
-                currencySO.Value += 5;
+                currencySO.Value += 10;
                 currencyText.text = "$" + currencySO.Value.ToString();
                 timer = 0;
             }
