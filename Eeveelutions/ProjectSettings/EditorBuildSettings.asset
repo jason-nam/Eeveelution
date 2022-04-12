@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/PetView.unity
     guid: 0c4f18dee86473448949fbdf1c5af009
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainView.unity
     guid: ef4687b867d81684b99522ee97100676
+  - enabled: 1
+    path: Assets/Scenes/LeaderboardView.unity
+    guid: deb289dcbbb90e7429bc0e6d01bd4068
   m_configObjects: {}
