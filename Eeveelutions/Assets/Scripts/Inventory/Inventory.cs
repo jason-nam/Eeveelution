@@ -8,9 +8,9 @@ public class Inventory : MonoBehaviour{
     public UIInventory inventoryUI;
 
     private void Start(){
+        GiveItem(0);
         GiveItem(1);
         GiveItem(2);
-        RemoveItem(2);
         GiveItem(3);
     }
 
