@@ -9,6 +9,10 @@ public class TransactionUI : MonoBehaviour
     [SerializeField] private PriceSO waterStonePriceSO;
     [SerializeField] private PriceSO electricStonePriceSO;
     [SerializeField] private PriceSO fireStonePriceSO;
+    [SerializeField] private DataSO WaterStoneSO;
+    [SerializeField] private DataSO FireStoneSO;
+    [SerializeField] private DataSO ElectricStoneSO;
+
 
     public void BuyFood ()
     {
@@ -21,19 +25,31 @@ public class TransactionUI : MonoBehaviour
 
     public void BuyWaterStone ()
     {
-        if (currencySO.Value >= waterStonePriceSO.Value) currencySO.Value -= waterStonePriceSO.Value;
+        if (currencySO.Value >= waterStonePriceSO.Value)
+        {
+          currencySO.Value -= waterStonePriceSO.Value;
+          WaterStoneSO.Value += 1;
+        }
         // Update inventory
     }
 
     public void BuyElectricStone ()
     {
-        if (currencySO.Value >= electricStonePriceSO.Value) currencySO.Value -= electricStonePriceSO.Value;
+        if (currencySO.Value >= electricStonePriceSO.Value)
+        {
+          currencySO.Value -= electricStonePriceSO.Value;
+          ElectricStoneSO.Value += 1;
+        }
         // Update inventory
     }
 
     public void BuyFireStone ()
     {
-        if (currencySO.Value >= fireStonePriceSO.Value) currencySO.Value -= fireStonePriceSO.Value;
+        if (currencySO.Value >= fireStonePriceSO.Value)
+        {
+          currencySO.Value -= fireStonePriceSO.Value;
+          FireStoneSO.Value += 1;
+        }
         // Update inventory
     }
 

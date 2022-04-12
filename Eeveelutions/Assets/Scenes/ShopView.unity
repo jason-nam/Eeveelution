@@ -1104,6 +1104,9 @@ MonoBehaviour:
   waterStonePriceSO: {fileID: 11400000, guid: a7521849a19de7f429beccc8d0bf84f4, type: 2}
   electricStonePriceSO: {fileID: 11400000, guid: b64de0b0972e9794887debd54083c8af, type: 2}
   fireStonePriceSO: {fileID: 11400000, guid: dec13e76499d1524398363f207ce9718, type: 2}
+  WaterStoneSO: {fileID: 11400000, guid: 2beb87a51a5934feebee385fb12c63a0, type: 2}
+  FireStoneSO: {fileID: 11400000, guid: 2c7b1cd3e564d4a96b3eaf44fb03d29c, type: 2}
+  ElectricStoneSO: {fileID: 11400000, guid: 7089e4cf7425a4f0e8625de1fda40ee6, type: 2}
 --- !u!4 &1112467039
 Transform:
   m_ObjectHideFlags: 0
