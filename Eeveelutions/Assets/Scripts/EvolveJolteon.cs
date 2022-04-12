@@ -7,6 +7,8 @@ public class EvolveJolteon : MonoBehaviour
 {
     public Image original;
     public Sprite newSprite;
+
+    [SerializeField] private DataSO ElectricStoneSO;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,11 @@ public class EvolveJolteon : MonoBehaviour
     }
     public void NewImage()
     {
-      original.sprite = newSprite;
+      if (ElectricStoneSO.Value > 0)
+      {
+        original.sprite = newSprite;
+        ElectricStoneSO.Value -= 1;
+      }
+
     }
 }
