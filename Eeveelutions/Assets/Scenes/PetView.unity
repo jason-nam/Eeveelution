@@ -304,12 +304,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 355286857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526b547e7005be74d90d3382b0a204ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 63fabf0fa3544594d80ddd4a043d2c6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currencyText: {fileID: 355286860}
-  healthSO: {fileID: 11400000, guid: 54daeabc88cb1704b96d152d9ac9750c, type: 2}
-  currencySO: {fileID: 11400000, guid: 05eebb41f39ce7d4e8e5dd3d4d22c205, type: 2}
 --- !u!114 &355286860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,6 +980,7 @@ GameObject:
   - component: {fileID: 850712309}
   - component: {fileID: 850712311}
   - component: {fileID: 850712310}
+  - component: {fileID: 850712312}
   m_Layer: 5
   m_Name: HealthText
   m_TagString: Untagged
@@ -1050,6 +1049,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 850712308}
   m_CullTransparentMesh: 1
+--- !u!114 &850712312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850712308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a94878e568a2f848a43c0644c916435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthText: {fileID: 850712310}
 --- !u!1 &1032070905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,6 +1208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243d24537f97bcc40bb771c9d016cbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   healthText: {fileID: 850712310}
   foodSO: {fileID: 11400000, guid: bd4acc9edae80ae4e849a3234815a281, type: 2}
   healthSO: {fileID: 11400000, guid: 54daeabc88cb1704b96d152d9ac9750c, type: 2}
@@ -1259,6 +1272,8 @@ MonoBehaviour:
   m_Spacing: {x: 30, y: 10}
   m_Constraint: 0
   m_ConstraintCount: 2
+=======
+>>>>>>> set up saving stats
 --- !u!1 &1141651758
 GameObject:
   m_ObjectHideFlags: 0
