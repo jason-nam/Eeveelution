@@ -10,14 +10,14 @@ public class InventoryUI : MonoBehaviour
 
     void Start ()
     {
-        inventoryText.text = "Food: " + foodSO.Value.ToString();
+        inventoryText.text = foodSO.Value.ToString();
 
 
     }
 
     void Update()
     {
-        inventoryText.text = "Food: " + foodSO.Value.ToString();
+        inventoryText.text = foodSO.Value.ToString();
 
 
 
