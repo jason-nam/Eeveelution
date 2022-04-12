@@ -750,7 +750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   original: {fileID: 421870486}
   newSprite: {fileID: 21300000, guid: 30e055a9a8e19234ab9431b2a3f25321, type: 3}
-  ElectricStoneSO: {fileID: 0}
+  electric: 0
 --- !u!1 &712101057
 GameObject:
   m_ObjectHideFlags: 0

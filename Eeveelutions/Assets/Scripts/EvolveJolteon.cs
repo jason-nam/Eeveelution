@@ -7,12 +7,17 @@ public class EvolveJolteon : MonoBehaviour
 {
     public Image original;
     public Sprite newSprite;
-
-    [SerializeField] private DataSO ElectricStoneSO;
+    public int electric;
+    public String state;
     // Start is called before the first frame update
     void Start()
     {
-
+      electric = PlayerPrefs.GetInt("Electric");
+      state = PlayerPrefs.GetString("State");
+      if (State == "Electric")
+      {
+        original.sprite = newSprite;
+      }
     }
 
     // Update is called once per frame
@@ -22,10 +27,16 @@ public class EvolveJolteon : MonoBehaviour
     }
     public void NewImage()
     {
-      if (ElectricStoneSO.Value > 0)
+      electric = PlayerPrefs.GetInt("Electric");
+      if (electric > 0)
       {
+        electric -= 1;
+        PlayerPrefs.SetInt("Electric", electric);
         original.sprite = newSprite;
-        ElectricStoneSO.Value -= 1;
+        state = "Electric";
+        PlayerPrefs.SetString("State", state);
+        PlayerPrefs.Save();
+
       }
 
     }
