@@ -12,7 +12,7 @@ public class StartButton : MonoBehaviour {
     private int initFire = 0;
     private int initWater = 0;
     private int initElectric = 0;
-    private int initState = "Eevee";
+    private string initState = "Eevee";
     
     public void StartGame() {
 
