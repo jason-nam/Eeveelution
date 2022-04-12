@@ -8,13 +8,13 @@ public class EvolveJolteon : MonoBehaviour
     public Image original;
     public Sprite newSprite;
     public int electric;
-    public String state;
+    public string state;
     // Start is called before the first frame update
     void Start()
     {
       electric = PlayerPrefs.GetInt("Electric");
       state = PlayerPrefs.GetString("State");
-      if (State == "Electric")
+      if (state == "Electric")
       {
         original.sprite = newSprite;
       }
