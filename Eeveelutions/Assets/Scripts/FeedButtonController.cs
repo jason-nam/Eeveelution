@@ -17,7 +17,7 @@ public class FeedButtonController : MonoBehaviour
     {
         if (foodSO.Value > 0 && healthSO.Value < 10)
         {
-            healthSO.Value += 1;
+            healthSO.Value += 5;
             foodSO.Value -= 1;
         }
         healthText.text = healthSO.Value.ToString();
