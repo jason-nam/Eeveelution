@@ -1,27 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class CurrencyUI : MonoBehaviour
-{
-    public Text currencyText;
-    [SerializeField] private DataSO healthSO;
-    [SerializeField] private DataSO currencySO;
-    private float timer = 0.0f;
+public class CurrencyUI : MonoBehaviour {
     
-    void Start()
-    {
-        currencyText.text = "$" + currencySO.Value.ToString();
+    public float timer = 0.0f;
+    public int health;
+    private int currency;
+
+    void Start() {
+        timer = 0.0f;
+        health = 10;
+        health = PlayerPrefs.GetInt("Health");
+        currency = 0;
+        currency = PlayerPrefs.GetInt("Currency");
     }
 
-    void Update()
-    {
+    void Update() {
+
         timer += Time.deltaTime;
-        if (timer > 3)
-            if (healthSO.Value > 0)
-            {
-                currencySO.Value += 10;
-                currencyText.text = "$" + currencySO.Value.ToString();
+        if (timer > 3) {
+            health = PlayerPrefs.GetInt("Health");
+            if (health > 0) {
+                currency += 10;
+                PlayerPrefs.SetInt("Currency", currency);
                 timer = 0;
+                PlayerPrefs.Save();
             }
+        }
     }
 }
