@@ -9,6 +9,7 @@ public class ElectricStonePriceUI : MonoBehaviour
     void Start()
     {
         electricStonePrice.text = "$" + electricStonePriceSO.Value.ToString();
+        electricStonePrice.color = Color.magenta;
     }
 
 }

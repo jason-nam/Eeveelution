@@ -9,6 +9,7 @@ public class WaterStonePriceUI : MonoBehaviour
     void Start()
     {
         waterStonePrice.text = "$" + waterStonePriceSO.Value.ToString();
+        waterStonePrice.color = Color.magenta;
     }
 
 }
