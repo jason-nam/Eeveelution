@@ -31,7 +31,9 @@ public class FeedButtonController : MonoBehaviour {
         timer = 0;
     }
 
+    /*
     public void Update () {
+
         timer += Time.deltaTime;
         if (timer > 3) {
             health = PlayerPrefs.GetInt("Health");
@@ -41,7 +43,9 @@ public class FeedButtonController : MonoBehaviour {
                 timer = 0;
                 PlayerPrefs.Save();
             }
-        }    
+        }
+
     }
+    */
 
 }
