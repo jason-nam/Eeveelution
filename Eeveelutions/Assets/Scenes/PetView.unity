@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 60348009}
   - component: {fileID: 60348008}
   - component: {fileID: 60348007}
+  - component: {fileID: 60348011}
   m_Layer: 5
   m_Name: FireButton
   m_TagString: Untagged
@@ -289,6 +290,7 @@ RectTransform:
   m_LocalScale: {x: 5.9060645, y: 5.9060645, z: 5.9060645}
   m_Children:
   - {fileID: 38462894}
+  - {fileID: 221002887}
   m_Father: {fileID: 1956830515}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -330,11 +332,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor: {r: 0.8196079, g: 0.5529412, b: 0.4156863, a: 1}
+    m_HighlightedColor: {r: 0.8196079, g: 0.5529412, b: 0.4156863, a: 1}
+    m_PressedColor: {r: 1, g: 0.5136268, b: 0.27044016, a: 1}
+    m_SelectedColor: {r: 0.81568635, g: 0.54901963, b: 0.4156863, a: 1}
+    m_DisabledColor: {r: 1, g: 0.5137255, b: 0.27058825, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -352,7 +354,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 60348009}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 60348011}
+        m_TargetAssemblyTypeName: Evolve, Assembly-CSharp
+        m_MethodName: Flareon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &60348009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,6 +405,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60348005}
   m_CullTransparentMesh: 1
+--- !u!114 &60348011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60348005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b525f3c23f44c844adb114c9357abdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current: {fileID: 421870486}
+  jolteon: {fileID: 21300000, guid: 30e055a9a8e19234ab9431b2a3f25321, type: 3}
+  flareon: {fileID: 21300000, guid: 734decb9dd93fc74b9fb4600b6595cba, type: 3}
+  vaporeon: {fileID: 21300000, guid: a23c069116eb74147a39ee125bd93b59, type: 3}
+  electric: 0
+  fire: 0
+  water: 0
+  state: 
 --- !u!1 &137305005
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,14 +667,14 @@ RectTransform:
   m_GameObject: {fileID: 221002886}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.16931748, y: 0.16931748, z: 0.16931748}
   m_Children: []
-  m_Father: {fileID: 1956830515}
-  m_RootOrder: 11
+  m_Father: {fileID: 60348006}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -686.36, y: -55}
+  m_AnchoredPosition: {x: 0, y: 1.3545418}
   m_SizeDelta: {x: 445.054, y: 428.46}
   m_Pivot: {x: 0.49999994, y: 0.50000006}
 --- !u!114 &221002888
@@ -1382,6 +1416,7 @@ RectTransform:
   m_LocalScale: {x: 5.9060645, y: 5.9060645, z: 5.9060645}
   m_Children:
   - {fileID: 1486106908}
+  - {fileID: 2020622726}
   m_Father: {fileID: 1956830515}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1399,9 +1434,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 754223742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 243d24537f97bcc40bb771c9d016cbd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b525f3c23f44c844adb114c9357abdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  current: {fileID: 421870486}
+  jolteon: {fileID: 21300000, guid: 30e055a9a8e19234ab9431b2a3f25321, type: 3}
+  flareon: {fileID: 21300000, guid: 734decb9dd93fc74b9fb4600b6595cba, type: 3}
+  vaporeon: {fileID: 21300000, guid: a23c069116eb74147a39ee125bd93b59, type: 3}
+  electric: 0
+  fire: 0
+  water: 0
+  state: 
 --- !u!114 &754223745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1423,11 +1466,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor: {r: 0.8980393, g: 0.87843144, b: 0.5372549, a: 1}
+    m_HighlightedColor: {r: 0.8980393, g: 0.87843144, b: 0.5372549, a: 1}
+    m_PressedColor: {r: 1, g: 0.94565225, b: 0, a: 1}
+    m_SelectedColor: {r: 0.8980393, g: 0.87843144, b: 0.5372549, a: 1}
+    m_DisabledColor: {r: 1, g: 0.9450981, b: 0, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1445,7 +1488,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 754223746}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 754223744}
+        m_TargetAssemblyTypeName: Evolve, Assembly-CSharp
+        m_MethodName: Jolteon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &754223746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1459,7 +1514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9339623, g: 0.91503096, b: 0.56078434, a: 1}
+  m_Color: {r: 0.8980393, g: 0.87843144, b: 0.5372549, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2721,6 +2776,7 @@ GameObject:
   - component: {fileID: 1648170252}
   - component: {fileID: 1648170251}
   - component: {fileID: 1648170250}
+  - component: {fileID: 1648170254}
   m_Layer: 5
   m_Name: WaterButton
   m_TagString: Untagged
@@ -2740,6 +2796,7 @@ RectTransform:
   m_LocalScale: {x: 5.9060645, y: 5.9060645, z: 5.9060645}
   m_Children:
   - {fileID: 1225637589}
+  - {fileID: 2119360069}
   m_Father: {fileID: 1956830515}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2781,11 +2838,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor: {r: 0.64705884, g: 0.85098046, b: 0.8588236, a: 1}
+    m_HighlightedColor: {r: 0.64705884, g: 0.85098046, b: 0.8588236, a: 1}
+    m_PressedColor: {r: 0.28930813, g: 0.9736782, b: 1, a: 1}
+    m_SelectedColor: {r: 0.6431373, g: 0.8470589, b: 0.854902, a: 1}
+    m_DisabledColor: {r: 0.2901961, g: 0.9725491, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2803,7 +2860,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1648170252}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1648170254}
+        m_TargetAssemblyTypeName: Evolve, Assembly-CSharp
+        m_MethodName: Vaporeon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1648170252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2842,6 +2911,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648170248}
   m_CullTransparentMesh: 1
+--- !u!114 &1648170254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648170248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b525f3c23f44c844adb114c9357abdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current: {fileID: 421870486}
+  jolteon: {fileID: 21300000, guid: 30e055a9a8e19234ab9431b2a3f25321, type: 3}
+  flareon: {fileID: 21300000, guid: 734decb9dd93fc74b9fb4600b6595cba, type: 3}
+  vaporeon: {fileID: 21300000, guid: a23c069116eb74147a39ee125bd93b59, type: 3}
+  electric: 0
+  fire: 0
+  water: 0
+  state: 
 --- !u!1 &1724483934
 GameObject:
   m_ObjectHideFlags: 0
@@ -3054,6 +3143,7 @@ GameObject:
   - component: {fileID: 1956830514}
   - component: {fileID: 1956830513}
   - component: {fileID: 1956830512}
+  - component: {fileID: 1956830516}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3143,9 +3233,6 @@ RectTransform:
   - {fileID: 754223743}
   - {fileID: 60348006}
   - {fileID: 1648170249}
-  - {fileID: 2020622726}
-  - {fileID: 221002887}
-  - {fileID: 2119360069}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3154,6 +3241,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1956830516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956830511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b525f3c23f44c844adb114c9357abdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current: {fileID: 0}
+  jolteon: {fileID: 0}
+  flareon: {fileID: 0}
+  vaporeon: {fileID: 0}
+  electric: 0
+  fire: 0
+  water: 0
+  state: 
 --- !u!1 &2020622725
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,14 +3288,14 @@ RectTransform:
   m_GameObject: {fileID: 2020622725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.16931748, y: 0.16931748, z: 0.16931748}
   m_Children: []
-  m_Father: {fileID: 1956830515}
-  m_RootOrder: 10
+  m_Father: {fileID: 754223743}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1008, y: -55}
+  m_AnchoredPosition: {x: 0, y: 1.3545418}
   m_SizeDelta: {x: 445.054, y: 428.46}
   m_Pivot: {x: 0.49999994, y: 0.50000006}
 --- !u!114 &2020622727
@@ -3424,14 +3531,14 @@ RectTransform:
   m_GameObject: {fileID: 2119360068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.16931748, y: 0.16931748, z: 0.16931748}
   m_Children: []
-  m_Father: {fileID: 1956830515}
-  m_RootOrder: 12
+  m_Father: {fileID: 1648170249}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -377.47, y: -55}
+  m_AnchoredPosition: {x: -1.4341431, y: 1.3545418}
   m_SizeDelta: {x: 445.054, y: 428.46}
   m_Pivot: {x: 0.49999994, y: 0.50000006}
 --- !u!114 &2119360070
