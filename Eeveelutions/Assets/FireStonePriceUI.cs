@@ -9,7 +9,7 @@ public class FireStonePriceUI : MonoBehaviour
     void Start()
     {
         fireStonePrice.text = "$" + fireStonePriceSO.Value.ToString();
-        fireStonePrice.color = Color.magenta;
+        fireStonePrice.color = new Color(0.0f, 0.39f, 0.0f, 1f);
     }
 
 }

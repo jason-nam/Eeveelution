@@ -9,7 +9,7 @@ public class FoodPriceUI : MonoBehaviour
     void Start()
     {
         foodPrice.text = "$" + foodPriceSO.Value.ToString();
-        foodPrice.color = Color.magenta;
+        foodPrice.color = new Color(0.0f, 0.39f, 0.0f, 1f);
     }
 
 }
