@@ -22,6 +22,8 @@ public class CurrencyUI : MonoBehaviour {
         if (timer > 3) {
             health = PlayerPrefs.GetInt("Health");
             if (health > 0) {
+                health -= 1;
+                PlayerPrefs.SetInt("Health", health);
                 currency += 10;
                 PlayerPrefs.SetInt("Currency", currency);
                 timer = 0;

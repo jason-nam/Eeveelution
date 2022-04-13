@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 195728181}
   - component: {fileID: 195728180}
   m_Layer: 0
-  m_Name: Quantity
+  m_Name: WaterQuantity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1808,6 +1808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1043170373}
   - component: {fileID: 1043170374}
+  - component: {fileID: 1043170375}
   m_Layer: 5
   m_Name: SlotPanel
   m_TagString: Untagged
@@ -1862,6 +1863,22 @@ MonoBehaviour:
   m_Spacing: {x: 30, y: 10}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &1043170375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043170372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 484f642d01f98554da7661728ee0f1ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodText: {fileID: 1583453116}
+  fireStoneText: {fileID: 2139959546}
+  waterStoneText: {fileID: 195728180}
+  electricStoneText: {fileID: 1444936788}
 --- !u!1 &1099739591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2328,7 +2345,7 @@ GameObject:
   - component: {fileID: 1444936789}
   - component: {fileID: 1444936788}
   m_Layer: 0
-  m_Name: Quantity
+  m_Name: ElectricQuantity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2618,7 +2635,7 @@ GameObject:
   - component: {fileID: 1583453117}
   - component: {fileID: 1583453116}
   m_Layer: 0
-  m_Name: Quantity
+  m_Name: FoodQuantity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3463,7 +3480,7 @@ GameObject:
   - component: {fileID: 2139959547}
   - component: {fileID: 2139959546}
   m_Layer: 0
-  m_Name: Quantity
+  m_Name: FireQuantity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
