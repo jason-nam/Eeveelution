@@ -8,8 +8,8 @@ public class ElectricStonePriceUI : MonoBehaviour
 
     void Start()
     {
-        electricStonePrice.text = "$" + electricStonePriceSO.Value.ToString();
-        electricStonePrice.color = new Color(0.0f, 0.39f, 0.0f, 1f);
+        electricStonePrice.text = electricStonePriceSO.Value.ToString();
+        electricStonePrice.color = new Color(245/255.0f, 222/255.0f, 3/255.0f, 1f);
     }
 
 }
