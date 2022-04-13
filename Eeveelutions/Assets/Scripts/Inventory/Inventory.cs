@@ -8,10 +8,10 @@ public class Inventory : MonoBehaviour{
     public UIInventory inventoryUI;
 
     private void Start(){
-        GiveItem(0);
-        GiveItem(1);
-        GiveItem(2);
-        GiveItem(3);
+        // GiveItem(0);
+        // GiveItem(1);
+        // GiveItem(2);
+        // GiveItem(3);
     }
 
     public void GiveItem(int id){

@@ -11,11 +11,11 @@ public class UIInventory : MonoBehaviour
     public int numberOfSlots = 4;
 
     private void Awake(){
-        for(int i = 0; i < numberOfSlots; i++){
-            GameObject instance = Instantiate(slotPrefab);
-            instance.transform.SetParent(slotPanel);
-            uIItems.Add(instance.GetComponentInChildren<UIItem>());
-        }
+        // for(int i = 0; i < numberOfSlots; i++){
+        //     GameObject instance = Instantiate(slotPrefab);
+        //     instance.transform.SetParent(slotPanel);
+        //     uIItems.Add(instance.GetComponentInChildren<UIItem>());
+        // }
     }
 
     public void UpdateSlot(int slot, Item item){

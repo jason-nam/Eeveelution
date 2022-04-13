@@ -14,10 +14,10 @@ public class ItemDatabase : MonoBehaviour{
         Item waterStone = new Item(1, "waterStone", "Water Stone", null);
         Item fireStone = new Item(2, "fireStone", "Fire Stone", null);
         Item food = new Item(3, "food", "Food", null);
-        items.Add(electricStone);
-        items.Add(waterStone);
-        items.Add(fireStone);
-        items.Add(food);
+        // items.Add(electricStone);
+        // items.Add(waterStone);
+        // items.Add(fireStone);
+        // items.Add(food);
     }
 
     public Item GetItem(int id){
