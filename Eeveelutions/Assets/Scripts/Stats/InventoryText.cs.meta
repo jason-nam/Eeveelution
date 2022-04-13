@@ -1,9 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 484f642d01f98554da7661728ee0f1ad
+=======
 <<<<<<< HEAD:Eeveelutions/Assets/Leaderboard.cs.meta
 guid: c8861a29e84251b47b3f52046869a121
 =======
 guid: 484f642d01f98554da7661728ee0f1ad
 >>>>>>> 31938818a2944deb2c54e6e71c8fd58838a88ddb:Eeveelutions/Assets/Scripts/Stats/InventoryText.cs.meta
+>>>>>>> 31938818a2944deb2c54e6e71c8fd58838a88ddb
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
