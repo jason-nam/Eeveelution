@@ -1879,6 +1879,10 @@ MonoBehaviour:
   fireStoneText: {fileID: 2139959546}
   waterStoneText: {fileID: 195728180}
   electricStoneText: {fileID: 1444936788}
+  foodItem: {fileID: 931137068}
+  fireItem: {fileID: 226138865}
+  waterItem: {fileID: 2059952408}
+  electricItem: {fileID: 720382075}
 --- !u!1 &1099739591
 GameObject:
   m_ObjectHideFlags: 0
