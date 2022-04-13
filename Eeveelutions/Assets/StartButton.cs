@@ -14,6 +14,7 @@ public class StartButton : MonoBehaviour {
     private int initWater = 0;
     private int initElectric = 0;
     private string initState = "Eevee";
+    private int initDead = 0;
     
     public void StartGame() {
 
@@ -31,6 +32,7 @@ public class StartButton : MonoBehaviour {
         PlayerPrefs.SetInt("Water", initWater);
         PlayerPrefs.SetInt("Electric", initElectric);
         PlayerPrefs.SetString("State", initState);
+        PlayerPrefs.SetInt("Dead", initDead);
         PlayerPrefs.Save();
 
     }
