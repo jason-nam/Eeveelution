@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class StartButton : MonoBehaviour {
 
+    public InputField username;
     [SerializeField] private string mainView = "MainView";
     private int initFood = 0;
     private int initHealth = 10;
@@ -30,6 +32,7 @@ public class StartButton : MonoBehaviour {
         PlayerPrefs.SetInt("Water", initWater);
         PlayerPrefs.SetInt("Electric", initElectric);
         PlayerPrefs.SetString("State", initState);
+        PlayerPrefs.SetString("Username", username.text);
         PlayerPrefs.Save();
 
     }
