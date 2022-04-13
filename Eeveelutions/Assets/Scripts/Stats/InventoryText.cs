@@ -20,48 +20,37 @@ public class InventoryText : MonoBehaviour {
         fireStoneText.text = PlayerPrefs.GetInt("Fire").ToString();
         waterStoneText.text = PlayerPrefs.GetInt("Water").ToString();
         electricStoneText.text = PlayerPrefs.GetInt("Electric").ToString();
-    
+        Update();
+
     }
 
     public void Update() {
 
-        if (PlayerPrefs.GetInt("Food") > 0)
-        {
+        if (PlayerPrefs.GetInt("Food") > 0) {
             foodItem.SetActive(true);
             foodText.text = PlayerPrefs.GetInt("Food").ToString();
-        }
-        else
-        {
+        } else {
             foodItem.SetActive(false);
             foodText.text = "";
         }
-        if (PlayerPrefs.GetInt("Fire") > 0)
-        {
+        if (PlayerPrefs.GetInt("Fire") > 0) {
             fireItem.SetActive(true);
             fireStoneText.text = PlayerPrefs.GetInt("Fire").ToString();
-        }
-        else
-        {
+        } else {
             fireItem.SetActive(false);
             fireStoneText.text = "";
         }
-        if (PlayerPrefs.GetInt("Water") > 0)
-        {
+        if (PlayerPrefs.GetInt("Water") > 0) {
             waterItem.SetActive(true);
             waterStoneText.text = PlayerPrefs.GetInt("Water").ToString();
-        }
-        else
-        {
+        } else {
             waterItem.SetActive(false);
             waterStoneText.text = "";
         }
-        if (PlayerPrefs.GetInt("Electric") > 0)
-        {
+        if (PlayerPrefs.GetInt("Electric") > 0) {
             electricItem.SetActive(true);
             electricStoneText.text = PlayerPrefs.GetInt("Electric").ToString();
-        }
-        else
-        {
+        } else {
             electricItem.SetActive(false);
             electricStoneText.text = "";
         }
