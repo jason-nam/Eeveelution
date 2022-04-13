@@ -669,6 +669,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.16931748, y: 0.16931748, z: 0.16931748}
   m_Children: []
+  m_Father: {fileID: 60348006}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -725,7 +727,7 @@ GameObject:
   - component: {fileID: 226138868}
   - component: {fileID: 226138867}
   m_Layer: 5
-  m_Name: Item
+  m_Name: FireItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1128,6 +1130,7 @@ GameObject:
   - component: {fileID: 713171072}
   - component: {fileID: 713171071}
   - component: {fileID: 713171074}
+  - component: {fileID: 713171075}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1214,6 +1217,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   health: 0
+--- !u!114 &713171075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713171070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe1a8adaa9052af48a7a4cdf32661c5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current: {fileID: 421870486}
+  jolteon: {fileID: 21300000, guid: 30e055a9a8e19234ab9431b2a3f25321, type: 3}
+  joltSad: {fileID: 21300000, guid: 7f986c209373bf043a5e09829c76d331, type: 3}
+  joltDead: {fileID: 21300000, guid: 143307852a9b1bf4ab3670f56391ffc3, type: 3}
+  flareon: {fileID: 21300000, guid: 734decb9dd93fc74b9fb4600b6595cba, type: 3}
+  flareSad: {fileID: 21300000, guid: 2e2a9bbbd12411a42bec9af56adbf208, type: 3}
+  flareDead: {fileID: 21300000, guid: ee13a493c00ee6543bc0352cde7cb8a8, type: 3}
+  vaporeon: {fileID: 21300000, guid: a23c069116eb74147a39ee125bd93b59, type: 3}
+  vaporSad: {fileID: 21300000, guid: 7b1e63501e654d24a8c744fed988e501, type: 3}
+  vaporDead: {fileID: 21300000, guid: 6ea6128df808ffa49b3648d6c2ae1bf4, type: 3}
+  electric: 0
+  fire: 0
+  water: 0
+  state: 
+  health: 0
 --- !u!1 &720382075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,7 +1256,7 @@ GameObject:
   - component: {fileID: 720382078}
   - component: {fileID: 720382077}
   m_Layer: 5
-  m_Name: Item
+  m_Name: ElectricItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1606,7 +1636,7 @@ GameObject:
   - component: {fileID: 931137071}
   - component: {fileID: 931137070}
   m_Layer: 5
-  m_Name: Item
+  m_Name: FoodItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1896,6 +1926,10 @@ MonoBehaviour:
   fireStoneText: {fileID: 2139959546}
   waterStoneText: {fileID: 195728180}
   electricStoneText: {fileID: 1444936788}
+  foodItem: {fileID: 931137068}
+  fireItem: {fileID: 226138865}
+  waterItem: {fileID: 2059952408}
+  electricItem: {fileID: 720382075}
 --- !u!1 &1099739591
 GameObject:
   m_ObjectHideFlags: 0
@@ -3495,6 +3529,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.16931748, y: 0.16931748, z: 0.16931748}
   m_Children: []
+  m_Father: {fileID: 754223743}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3551,7 +3587,7 @@ GameObject:
   - component: {fileID: 2059952411}
   - component: {fileID: 2059952410}
   m_Layer: 5
-  m_Name: Item
+  m_Name: WaterItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3829,6 +3865,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.16931748, y: 0.16931748, z: 0.16931748}
   m_Children: []
+  m_Father: {fileID: 1648170249}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
