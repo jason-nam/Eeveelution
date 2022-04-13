@@ -9,13 +9,13 @@ public class CurrencyText : MonoBehaviour {
 
     void Start() {
 
-        currencyText.text = "$ " + PlayerPrefs.GetInt("Currency").ToString();
+        currencyText.text = PlayerPrefs.GetInt("Currency").ToString();
 
     }
 
     void Update() {
 
-        currencyText.text = "$ " + PlayerPrefs.GetInt("Currency").ToString();
+        currencyText.text = PlayerPrefs.GetInt("Currency").ToString();
 
     }
 }
